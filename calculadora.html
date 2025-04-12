@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Avaliação de Estudante</title>
+    <link rel="stylesheet" href="estilo1.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Avaliação de Estudante</h1>
+        <form onsubmit="event.preventDefault(); avaliarEstudante();">
+            <label for="nota">Nota:</label>
+            <input type="number" id="nota" step="0.1" min="0" max="10" placeholder="Digite a nota (0 a 10)" required>
+
+            <label for="faltas">Faltas:</label>
+            <input type="number" id="faltas" step="1" min="0" max="50" placeholder="Digite o número de faltas" required>
+
+            <label for="disciplina">Disciplina:</label>
+            <select id="disciplina" required> 
+                <option value="" disabled selected>Selecione a disciplina</option>
+                <option value="40">Matemática (40 aulas)</option>
+                <option value="30">História (30 aulas)</option>
+                <option value="50">Física (50 aulas)</option>
+            </select>
+
+            <button type="submit">Avaliar</button>
+        </form>
+        <button class="back-button" onclick="window.location.href='Principal.html'">
+            Voltar para a Página Principal
+        </button>
+        <div id="resultado"></div>
+    </div>
+
+
+  
+</body>
+</html>
+
