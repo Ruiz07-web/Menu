@@ -7,7 +7,7 @@ body {
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background-image: url(imagens/cad.jpg);
+    background-image: url(cad.jpg);
 }
 .form-container {
     background: #fff;
